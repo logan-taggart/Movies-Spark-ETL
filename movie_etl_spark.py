@@ -50,7 +50,7 @@ popular = movie_stats.filter(col("num_ratings") >= 100) \
 # LOAD
 # ------------------
 
-# Show and sace results
+# Show and save results
 popular.show(15, truncate=False)
 popular.write.csv("results", header=True, mode="overwrite")
 
